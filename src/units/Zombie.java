@@ -22,6 +22,5 @@ public class Zombie extends Unit implements Enemy {
 				System.out.println("좀비가 " + damage + "의 피해를 주었습니다");
 			}
 		}
-		System.out.println("현재 좀비의 체력 : " + this.hp);
 	}
 }

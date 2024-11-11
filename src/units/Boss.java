@@ -39,8 +39,6 @@ public class Boss extends Unit implements Enemy {
 				System.out.println(attMessage + "보스가 " + damage + "의 피해를 주었습니다");
 			}
 		}
-		System.out.println("현재 보스의 체력 : " + this.hp);
-
 	}
 
 }
