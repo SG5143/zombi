@@ -1,16 +1,20 @@
 package units;
 
+import java.util.Random;
+
 abstract class Unit {
 	protected final int MAX_HP;
 	protected int hp;
 	protected int position;
 	protected int attackPower;
+	protected Random r;
 
 	public Unit(int position, int hp, int attackPower) {
 		this.MAX_HP = hp;
 		this.hp = hp;
 		this.position = position;
 		this.attackPower = attackPower;
+		this.r = new Random();
 	}
 
 	public int getMaxHp() {
