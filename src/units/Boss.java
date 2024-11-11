@@ -21,7 +21,7 @@ public class Boss extends Unit implements Enemy {
 	}
 
 	@Override
-	void attack(Unit unit) {
+	public void attack(Unit unit) {
 		int att = r.nextInt(4);
 
 		if (att == 0)
