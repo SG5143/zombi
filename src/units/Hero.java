@@ -19,7 +19,8 @@ public class Hero extends Unit {
 			int damage = r.nextInt(attackPower / 2) + (attackPower / 2) + 1;
 
 			if(unit instanceof Boss && ((Boss) unit).getShield() > 0) {
-				decreaseHp(damage);
+				Boss boss = (Boss) unit;
+				boss.decreaseShield(damage);
 			}else {
 				if (r.nextBoolean())
 					unit.decreaseHp(damage * 2);
