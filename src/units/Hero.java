@@ -18,10 +18,16 @@ public class Hero extends Unit {
 		if (unit instanceof Enemy) {
 			int damage = r.nextInt(attackPower / 2) + (attackPower / 2) + 1;
 
-			if (r.nextBoolean())
-				unit.decreaseHp(damage * 2);
-			else
-				unit.decreaseHp(damage);
+			if(unit instanceof Boss && ((Boss) unit).getShield() > 0) {
+				decreaseHp(damage);
+			}else {
+				if (r.nextBoolean())
+					unit.decreaseHp(damage * 2);
+				else
+					unit.decreaseHp(damage);				
+			}
+			
+			System.out.println("적에게 " + damage + "의 피해를 가했습니다");
 		}
 	}
 
