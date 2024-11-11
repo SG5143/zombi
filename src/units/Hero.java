@@ -3,7 +3,7 @@ package units;
 import interfaces.Enemy;
 
 public class Hero extends Unit {
-	int potion;
+	private int potion;
 
 	public Hero(int position, int hp, int attackPower) {
 		super(position, hp, attackPower);
