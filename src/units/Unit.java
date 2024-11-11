@@ -39,5 +39,11 @@ abstract class Unit {
 			this.hp = MAX_HP;
 	}
 
+	public void decreaseHp(int hp) {
+		this.hp -= hp;
+		if (this.hp < 0)
+			this.hp = 0;
+	}
+
 	abstract void attack(Unit unit);
 }
