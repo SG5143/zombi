@@ -7,7 +7,7 @@ public class Boss extends Unit implements Enemy {
 
 	public Boss(int position, int hp, int attackPower) {
 		super(position, hp, attackPower);
-		this.shield = (int) ((int) hp * 0.2);
+		this.shield = (int) (hp * 0.2);
 	}
 
 	public int getShield() {
@@ -30,7 +30,7 @@ public class Boss extends Unit implements Enemy {
 			if (unit instanceof Hero) {
 				int damage = r.nextInt(attackPower) + 1;
 
-				switch (damage) {
+				switch (att) {
 				case 1 -> unit.decreaseHp(damage * 2);
 				case 2, 3 -> unit.decreaseHp(damage);
 				}
