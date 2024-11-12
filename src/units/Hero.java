@@ -1,13 +1,16 @@
 package units;
 
+import constants.WeaponConstants;
 import interfaces.Enemy;
 
 public class Hero extends Unit {
+	private int weaponLevel;
 	private int potion;
 
 	public Hero(int position, int hp, int attackPower) {
 		super(position, hp, attackPower);
-		potion = 2;
+		this.potion = 2;
+		this.weaponLevel = 0;
 	}
 
 	public int getPotionCnt() {
@@ -24,6 +27,15 @@ public class Hero extends Unit {
 	public void move() {
 		if (position < 10)
 			position++;
+	}
+
+	public int getWeaponLevel() {
+		return weaponLevel;
+	}
+
+	public void setWeaponLevel(int weaponLevel) {
+		this.weaponLevel = weaponLevel;
+		this.attackPower = Integer.parseInt(WeaponConstants.WEAPONS[weaponLevel][1]);
 	}
 
 	@Override
