@@ -36,9 +36,8 @@
  ┃ ┣ 📜Hero.java
  ┃ ┣ 📜Unit.java
  ┃ ┗ 📜Zombie.java
- ┣ 📂zombi
- ┃ ┣ 📜Game.java
- ┃ ┗ 📜Main.java
- ┣ 📜.DS_Store
- ┗ 📜module-info.java
+ ┗  📂zombi
+   ┣ 📜Game.java
+   ┗ 📜Main.java
+
 ```
