@@ -4,7 +4,7 @@
 
 <br>
 
-### 게임설명
+### 게임 설명
 > - 1~10의 칸 이동
 > - Enemy를 만나면 전투 실행
 > - 마지막 10번 칸에 도달하면 종료
@@ -12,12 +12,33 @@
 
 <br><br>
 
-### 클래스다이어그램
+### Class Diagram
 ![클래스다이어그램](https://github.com/SG5143/zombi/blob/main/resources/classDiagram.png)
 
 <br><br>
 
-### DEMO
+### Demo
 <img src ="https://github.com/SG5143/zombi/blob/main/resources/upgrade.gif" width="400">
 <br>
 <img src ="https://github.com/SG5143/zombi/blob/main/resources/zombie.gif" width="400">
+
+<br><br>
+
+### Tree
+```
+📦src
+ ┣ 📂constants
+ ┃ ┗ 📜WeaponConstants.java
+ ┣ 📂interfaces
+ ┃ ┗ 📜Enemy.java
+ ┣ 📂units
+ ┃ ┣ 📜Boss.java
+ ┃ ┣ 📜Hero.java
+ ┃ ┣ 📜Unit.java
+ ┃ ┗ 📜Zombie.java
+ ┣ 📂zombi
+ ┃ ┣ 📜Game.java
+ ┃ ┗ 📜Main.java
+ ┣ 📜.DS_Store
+ ┗ 📜module-info.java
+```
